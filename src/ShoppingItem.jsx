@@ -8,7 +8,7 @@ function ShoppingItem(props) {
     }
 
     const handleDecrease = () => {
-        setQuantity(quantity - 1)
+        setQuantity(quantity > 0 ? quantity - 1 : 0)
     }
 
     return (
